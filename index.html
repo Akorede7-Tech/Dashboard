@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Asset/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="Asset/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Asset/images_10.jpeg" type="image/jpeg">
+    <title>Web X</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        background: #fff;
+        height: auto;
+        display: block;
+        justify-content: center;
+        place-self: center;
+        overflow-x: hidden;
+        width: fit-content;
+    }
+    .main{
+      background: transparent;
+      width:100vw;
+      display: flex;
+      height: 130vh;
+    }
+    .left{
+        width: 20vw;
+        height: 130vh;
+        /* background: #d2ee8c; */
+        /* background: #d2d2d2; */
+        background: #ffffcc;
+        align-items: center;
+        display: grid;
+        /* border-top: .2px solid #555;
+        border-left: .2px solid #555; */
+        border-radius: 30px 0px 0px 30px;
+    }
+    .top-text{
+          display: flex;
+          justify-content: center;
+    }
+    p{
+        color: #777;
+        cursor: default;
+        gap: 2vw;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        cursor: pointer;
+
+    }
+    p i{
+        color: #ff0000;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    p i:hover{
+        color: #6495ed;
+        transition: .8s ease-in-out;
+        
+    }
+    .image{
+        display: grid;
+        align-self: center;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 8vw;
+        height: 15vh;
+        border-radius: 50%;
+        cursor: pointer;
+        place-self: center;
+    }
+    img:hover{
+        scale: 1.5;
+        transition: .8s ease-in-out;
+    }
+    .text{
+        text-align: center;
+        cursor: pointer;
+    }
+    h3{
+        color: #000;
+        font-weight: bold;
+        cursor:default;
+        text-align: center;
+        font-size: 1.8vw;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    h5{
+        color: #777;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1vw;
+        cursor: default;
+    }
+    .dash{
+        display: grid;
+        text-align: center;
+        
+    }
+    .dash h5{
+        color: #777;
+        cursor: default;
+        font-family: sans-serif;
+    }
+    .d{
+        text-align: center;
+    }
+    .d i{
+        color: #ff0000;
+        transition: .8s ease-in-out;
+        
+    }
+    .d i:hover{
+        color: #6495ed;
+        cursor: pointer;
+        transition: .8s ease-in-out;
+    }
+    a{
+        text-decoration: none;
+    }
+    .log{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+    }
+    .log p{
+        text-align: center;
+        color: #555;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+    .log p:hover{
+        transition: .8s ease-in-out;
+        color: #ff0000;
+    }
+    .log i{
+        color: #000;
+        font-size: larger;
+        cursor: pointer;
+    }
+    .log i:hover{
+        transition: .8s ease-in-out;
+        scale: 1.5;
+        color: #ff0000;
+    }
+
+    /* ------------------- */
+    .right{
+        width: 80vw;
+        height: 130vh;
+        display: flex;
+        padding-right: 3vw;
+        /* border-right: .2px solid #555;
+        border-bottom: .2px solid #555; */
+        border-radius: 0px 30px 30px 0px;
+        background: #fff;
+    }
+    .inner{
+        display: grid;
+        width: 76vw;
+        padding-left: 4vw;
+        justify-content: space-between;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        width: 76vw;
+        height:30vh ;
+    }
+    .ic{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-top: 5vh;
+    }
+    .o:hover{
+        color: #000;
+        transition: .8s ease-in-out;
+
+
+    }
+    .x:hover{
+        color:#000;
+        transition: .8s ease-in-out;
+
+
+    }
+    .o{
+        color: #ff0000;
+    }
+    .x{
+        color: #6495ed;
+    }
+    .s{
+        color: #d1d1d1;
+    }
+@media(max-width:992px){
+   .name .gain h1{
+    cursor: default;
+        font-family: serif;
+        z-index: 10;
+        font-weight: bold;
+        font-size:25px;
+        width: 9vw;
+        height: 4vh;
+   }
+
+}
+@media(max-width:576px){
+    .name .gain h1{
+    cursor: default;
+        font-family: serif;
+        font-weight: bold;
+        font-size:25px;
+        z-index: 10;
+   }
+}
+@media(max-width:360){
+    .name .gain h1{
+    cursor: default;
+        font-family: serif;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 10;
+   }
+}
+   .name .gain h1{
+        cursor: default;
+        font-family: serif;
+        font-weight: bold;
+        font-size:45px;
+        z-index: 10;
+        width: 15vw;
+        height: 7vh;
+    }
+    p{
+        cursor: default;
+    }
+    h3{
+        cursor: default;
+    }
+    b{
+        cursor: default;
+    }
+    .side{
+        margin-right: 3vw;
+        padding-top: 5vh;
+    }
+    .sides{
+        margin-right: 3vw;
+        height: fit-content;
+    }
+    .card{
+        display: grid;
+        cursor: pointer;
+        width: 33vw;
+        height: 30vh;
+        border-radius: 30px;
+        box-shadow: 3px 3px 7px #555;
+        background: #ffffcc;
+        align-items: center;
+        justify-content: center;
+    }
+    .card h3{
+       margin: 0;
+       line-height:10px;
+       text-align: left;
+
+    }
+    .card:hover{
+        transform: translateX(-3px);
+        transition: .8s ease-in-out;
+    }
+    .upgrade{
+        color: #ff0000;
+        text-align: left;
+    }
+    .upgrade b{
+        color: #000;
+        text-align: left;
+
+    }
+    .ux{
+        align-items: center;
+        display: grid;
+        margin-top: -12vh;
+    }
+    .img{
+        width: 3vw;
+        height: 5vh;
+        border-radius: 50%;
+        cursor: pointer;
+        place-self: center; 
+    }
+    .cardin{
+        /* padding-left: 3vw; */
+    }
+    .btn{
+        width:26vw ;
+        display: flex;
+        justify-content: right;
+    }
+    .button{
+        background: rgb(255, 69, 2);
+        border-radius: 50%;
+        height: 12vh;
+        z-index: 10;
+        width: 6vw;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        display: flex;
+    }
+    .button:hover{
+        transition: .8s ease-in-out;
+        scale: 1.4;
+    }
+    .gain{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .numbers{
+        display: flex;
+        justify-content: space-between;
+        width: 30vw;
+        height: 5vh;
+        gap: 5px;
+        padding-top: 2vh;
+    }
+    .one,.two,.three{
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        border-bottom: .2px solid #555;
+    }
+    .under{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        width: 25vw;
+        color: #000;
+        font-size: 20px;
+        font-family:sans-serif;
+    }
+    .un{
+        color: #000;
+    }
+    .middle{
+        display: grid;
+        margin-top: 5vh;
+        width: 76vw;
+        height: 35vh;
+    }
+    .line b{
+        color: #555;
+        font-size: 10px;
+    }
+    .line{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 31vw;
+        height: 10vh;
+    }
+    #date{
+        border: .2px solid #555;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    #date:hover{
+        border: .2px solid #6495ed;
+        padding: 10px;
+        scale: 1.2;
+        cursor: pointer;
+        transition: .8s ease-in-out;
+        border-radius: 20px;
+    }
+    .k{
+        display: grid;
+        padding-top:3vh;
+        justify-content: space-between;
+        height: 33vh;
+        width: 24vh;
+        color: #777;
+        align-items: center;
+    }
+    .k b{
+        color: #777;
+    }
+    .kk{
+        display: flex;
+        width: 76vw;
+        justify-content: space-between;
+        height:24vh ;
+    }
+  .l{
+           border-bottom: .2px solid #777;
+           width: 28vw;
+           margin-top: -2vh;
+           margin-left: 3vw;
+           padding-top: 1vh;
+    }
+    .perform{
+        display: grid;
+        cursor: pointer;
+        width: 31vw;
+        height: 24vh;
+        background: #fff;
+        margin-top: -5vh;
+
+    }
+    .perform h2{
+        display: flex;
+        font-family:sans-serif;
+        color: #000;
+        margin-top: 0vh;
+    }
+    .v{
+        display: flex;
+        margin-top: -1.5vh;
+        align-items: center;
+        gap: 1vw;
+        color: #555;
+    }
+    .v p:hover{
+        color: #ff0000;
+        transition: .8s ease-in-out;
+        cursor: pointer;
+    }
+    .v i:hover{
+      scale: 2;
+      color: #ff0000;
+      transition: .8s ease-in-out;
+      cursor: pointer;
+    }
+    .imgon{
+        display: flex;
+        width: 31vw;
+        align-items: center;
+        justify-content: space-between;
+        color: #000;
+    }
+    .ss{
+        display: flex;
+        justify-content: space-between;
+        width: 28vw;
+        color: #555;
+        padding-left: 3vw;
+        padding-top: 2vh;
+        justify-self: center;
+    }
+    .ii{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+    }
+    /* ------------------------ */
+    .baseline{
+        height: 33vh;
+        border-radius: 30px;
+        width: 73vw;
+        box-shadow: 3px 3px 5px #555;
+        align-items: center;
+        display: flex;
+        margin-top: 15vh;
+        justify-content: space-between;
+        gap: 10vw;
+        background: #e4fbfd;
+    }
+    .or{
+        display: flex;
+        align-items: center;
+        gap: .3vw;
+    }
+    .or b{
+        color: #000;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .spread{
+        padding-left: 2.5vw;
+        display: grid;
+        height: 24vh;
+        position: absolute;
+        align-items: center;
+        font-size: 13px;
+        z-index: 10;
+
+    }
+    .load{
+        display: flex;
+        padding-left: 23vw;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        position: absolute;
+    }
+    .box1,.box2,.box3,.box4{
+        background: #fff;
+        width:9vw;
+        height: 23vh;
+        display: grid;
+        /* justify-content: center; */
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px #555;
+        border-radius: 20px;
+        z-index: 10;
+    }
+    .box4 b{
+        font-size: 30px;
+        margin-top: -2vh;
+    }
+    .box3 b{
+        font-size: 30px;
+        margin-top: -2vh;
+    }
+    .box2 b{
+        font-size: 30px;
+        margin-top: -2vh;
+    }
+    .box1 b{
+        font-size: 30px;
+        margin-top: -2vh;
+    }
+
+    .box1:hover{
+        transition: .8s ease-in-out;
+        transform: translateX(-2vw); 
+        box-shadow: 4px 4px 10px #555;
+
+    }
+    .box2:hover{
+        transition: .8s ease-in-out;
+        transform: translateY(-2vw);
+        box-shadow: 4px 4px 10px #555;
+
+    }
+    .box3:hover{
+        transition: .8s ease-in-out;
+        transform: translateY(2vw);
+        box-shadow: 4px 4px 10px #555;
+
+    }
+    .box4:hover{
+        transition: .8s ease-in-out;
+        transform: translateY(-2vw);
+        box-shadow: 4px 4px 10px #555;
+
+    }
+    .box5:hover{
+        transition: .8s ease-in-out;
+        transform: translateX(2vw);
+        box-shadow: 4px 4px 10px #555;
+    }
+    .box5{
+        z-index: 10;
+        background: #9fffff;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px #555;
+        width:9vw;
+        height: 23vh;
+        border-radius: 20px;
+        display: grid;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .sr{
+        display: flex;
+        width: 20vw;
+        z-index: 10;
+        margin-top: -30vh;
+        justify-content: center;
+        mix-blend-mode: multiply;
+    }
+    .stray{
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .stray:hover{
+        transition: .8s ease-in-out;
+        color: #000;
+    }
+
+    .stat{
+        color: #fff;
+        padding-left: 1vw;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="left">
+          <div class="top-text">
+          <p><i class="fa fa-bookmark" aria-hidden="true"></i> Crowz</p>
+          </div>
+          <div class="image">
+            <img src="Asset/images_10.jpeg" alt="image">
+            <div class="text">
+               <h3>Robert Grant</h3>
+               <h5>Marketing Director</h5>
+            </div>
+          </div>
+          <h4 class="d">Dashboard <i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+          <div class="dash">
+             <h5>Insights</h5>
+             <h5>Reports</h5>
+             <h5>Comments</h5>
+             <h5>Channels</h5>
+          </div>
+         <a href="#" target="_blank"><div class="log">
+               <i class="fa fa-sign-out" aria-hidden="true"></i> <p>Log out</p>
+          </div></a> 
+        </div>
+         <div class="right">
+            <div class="inner">
+                <div class="top">
+                    <div class="name">
+                        <div class="gain">
+                       <h1>Dashboard</h1>
+                       <div class="ic">
+                        <b class="o"> <i class="fa fa-check-circle" aria-hidden="true"></i> </b>
+                        <b class="s"> <i class="fa fa-cog" aria-hidden="true"></i> </b>
+                    </div>
+                </div>
+                       <div class="numbers">
+                        <div class="one">
+                        <p>Views</p><span><b class="x"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></b></span> 
+                    </div>
+
+                    <div class="two">
+                        <p>Followers</p><span><b class="o"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></b></span> 
+                    </div>
+                    <div class="three">
+                        <p>Reports</p><span><b class="x"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></b></span> 
+                    </div>
+
+                    </div>
+                    <div class="under">
+                        <p class="un" >27,6m</p>
+                        <p class="un" >219,3k</p>
+                        <p class="un" >1,5k</p>
+                        
+                      </div>
+                    </div>
+            
+                <div class="side">
+                    <div class="card">
+                        <div class="cardin">
+                        <p><img class="img" src="Asset/images_10.jpeg" alt="image"></p> 
+                        <div class="btn">
+                            <b class="button">Now</b>
+                        </div>
+                    <div class="ux">
+                        
+                        <h3 class="upgrade">Upgrade <b>Your</b></h3>
+                        <br><h3>Crowd</h3>
+                        <p style="display: flex; text-align: left; float: left;">Pro plan for better results</p>
+              
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="middle">
+                    <div class="line">
+                        <h1>Activity</h1>   <b>Data Updates every 3 hours</b> <input type="date" name="date" id="date">
+                    </div>
+                    <div class="kk">
+                    <div class="k">
+                        <b>40k</b><span class="l"></span>
+                        <b>30k</b><span class="l"></span>
+                        <b>20k</b><span class="l"></span>
+                        <b>10k</b><span class="l"></span>
+                        <b>0k</b><span class="l"></span>
+                        <div class="sr">
+                            <img style="place-self: center; display: flex;" src="Asset/download (1).jpg" alt="scale">
+                        </div>
+                        <div class="ss">
+                            <b>01</b>
+                            <b>02</b>
+                            <b>03</b>
+                            <b>04</b>
+                            <b>05</b>
+                            <b>06</b>
+                            <b>07</b>
+                        </div>
+                    </div>
+                    <div class="sides">
+                    <div class="perform">
+                        <h2>Top performers</h2>
+                        <div class="gap">
+                            <div class="imgon">
+                                <div class="ii">
+                        <p><img class="img" src="Asset/bigit-student-boy.png" alt="image"></p> <b>Voly Antonova</b></div>
+                         <b class="s">@valyantanova</b> <b>39%</b>
+                    </div>
+                    <div class="imgon">
+                        <div class="ii">
+                          
+                        <p><img class="img" src="Asset/images_10.jpeg" alt="image"></p>  <b>Mark Noli</b> </div>
+                         <b class="s">@marknoli</b> <b>18%</b>
+                    </div>
+                    <div class="imgon">
+                        <div class="ii">
+                           
+                        <p><img class="img" src="Asset/7e247b82025ceec830ec4a5bd16323d4.jpg" alt="image"></p> <b>Nency Villy</b></div>
+                         <b class="s">@nencyvilly</b> <b>25%</b>
+                    </div>
+
+                        <div class="v">
+                         <p>View more </p><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                
+                </div>
+              <div class="baseline">
+                <div class="spread">
+                   <h2>Channels</h2>
+                    <p>Your Channels</p>
+                    <div class="or">
+                    <p>Satistics for</p><b>1 week</b>
+                </div>
+                <p>period.</p>
+
+                </div>
+                <div class="load">
+                <div class="box1">
+                    <b style="color: #f90;"><i class="fa fa-dribbble" aria-hidden="true"></i></b>
+                    <p>Dribble</p>
+                    <b class="s" style="font-size: 15px;">@grantart</b>
+                    <h2>+2 %</h2>
+                </div>
+                <div class="box2">
+                  <b style="color: #6495ed;"><i class="fa fa-weibo" aria-hidden="true"></i></b>
+                  <p>Bahance</p>
+                  <b class="s" style="font-size: 15px;">@grantart</b>
+                  <h2>-7 %</h2>
+
+
+                </div>
+                <div class="box3">
+                  <b style="color: #ffff00;"><i class="fa fa-instagram" aria-hidden="true"></i></b>
+                  <p>Instagram</p>
+                  <b class="s" style="font-size: 15px;">@robertgrant</b>
+                  <h2>-4 %</h2>
+                  
+                </div>
+                <div class="box4">
+                  <b style="color:#ff5349;"><i class="fa fa-pinterest" aria-hidden="true"></i></b>
+                  <p>Pinterest</p>
+                  <b class="s" style="font-size: 15px;">@robertgrant</b>
+                  <h2>-2 %</h2>
+                   
+                </div>
+                <div class="box5">
+                    <div class="co">
+                  <h2 class="stat" >Full</h2>
+                  <h2 class="stat" >Stats</h2>
+                </div>
+                <div class="ar">
+                    <b class="stray"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></b>
+                </div>
+                </div>
+            </div>
+              </div>
+
+            </div>
+         </div>
+    </div>
+</body>
+</html>
